@@ -4,12 +4,13 @@ import plotly.express as px
 import pymongo
 from dotenv import dotenv_values
 
-# If the secrets doen't work, provide the file path of .env
-secrets = dotenv_values("C:\\Users\\alihi\\Desktop\\Programming\\Advanced Database\\cruise-dashboard\\.env")
+# secrets = dotenv_values("C:\\Users\\alihi\\Desktop\\Programming\\Advanced Database\\cruise-dashboard\\.env")
 
-connection = f"mongodb+srv://cruise0_ali:{secrets["DB_password"]}@cluster0.wjrco.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+# connection = f"mongodb+srv://cruise0_ali:{secrets["DB_password"]}@cluster0.wjrco.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
-# Connect to MongoDB server on the cloud
+
+connection = f"mongodb+srv://cruise0_ali:{st.secrets["DB_password"]}@cluster0.wjrco.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
 client = pymongo.MongoClient(connection, connectTimeoutMS=60000, socketTimeoutMS=60000)
 
 db = client["operational"]
@@ -151,3 +152,5 @@ st.markdown("</div>", unsafe_allow_html=True)
 st.markdown("</div>", unsafe_allow_html=True)
 
 client.close()
+
+# streamlit run "CRUISE Dashboard.py"

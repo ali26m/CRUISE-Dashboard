@@ -5,7 +5,7 @@
 
 ## Dashboard Link
 
-You can access the live and updated dashboard here: [Cruise Dashboard](https://cruise-dashboard.streamlit.app/)
+You can access the live and updated dashboard here: [CRUISE Dashboard](https://cruise-dashboard.streamlit.app/)
 
 ---
 ## Data Modeling

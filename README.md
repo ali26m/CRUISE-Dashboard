@@ -5,7 +5,7 @@
 
 ## Dashboard Link
 
-You can access the live and updated dashboard here: [Cruise Dashboard](https://super-cloud-6322.ploomber.app/)
+You can access the live and updated dashboard here: [CRUISE Dashboard](https://cruise-dashboard.streamlit.app/)
 
 ---
 ## Data Modeling
@@ -20,6 +20,6 @@ You can access the live and updated dashboard here: [Cruise Dashboard](https://s
 
 ## Streamlit Dashboard
 
-![image](https://github.com/user-attachments/assets/84f04d6d-e57b-4b3c-a0bc-0c72f0ea64e8)
+![image](https://github.com/user-attachments/assets/ff4ccb7c-17e2-41af-8567-5f015227b491)
 
 # Thank You

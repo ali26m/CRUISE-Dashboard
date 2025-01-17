@@ -3,13 +3,14 @@ import pandas as pd
 import plotly.express as px
 import pymongo
 from dotenv import dotenv_values
+import os
 
 # secrets = dotenv_values("C:\\Users\\alihi\\Desktop\\Programming\\Advanced Database\\cruise-dashboard\\.env")
 
-# connection = f"mongodb+srv://cruise0_ali:{secrets["DB_password"]}@cluster0.wjrco.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+# connection = f"mongodb+srv://cruise0_ali:{st.secrets["DB_password"]}@cluster0.wjrco.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 
-connection = f"mongodb+srv://cruise0_ali:{st.secrets["DB_password"]}@cluster0.wjrco.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+connection = f"mongodb+srv://cruise0_ali:{os.environ.get("DB_password")}@cluster0.wjrco.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 client = pymongo.MongoClient(connection, connectTimeoutMS=60000, socketTimeoutMS=60000)
 
